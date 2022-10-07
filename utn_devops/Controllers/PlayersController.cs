@@ -5,17 +5,17 @@ namespace utn_devops.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class PlayerController : ControllerBase
+    public class PlayersController : ControllerBase
     {
         private static readonly List<Player> players = new List<Player>
         {
-           new Player("A", "B", DateTime.Today),
-           new Player("C", "D", DateTime.Today),
+           new Player("Lionel", "Messi", DateTime.Today),
+           new Player("Juan", "Arango", DateTime.Today),
         };
         
-        private readonly ILogger<PlayerController> _logger;
+        private readonly ILogger<PlayersController> _logger;
 
-        public PlayerController(ILogger<PlayerController> logger)
+        public PlayersController(ILogger<PlayersController> logger)
         {
             _logger = logger;
         }
