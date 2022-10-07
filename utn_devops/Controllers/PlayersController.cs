@@ -9,8 +9,8 @@ namespace utn_devops.Controllers
     {
         private static readonly List<Player> players = new List<Player>
         {
-           new Player("Lionel", "Messi", DateTime.Today),
-           new Player("Juan", "Arango", DateTime.Today),
+           new Player("Lionel", "Messi", DateTime.Parse("1987-06-24").Ticks),
+           new Player("Juan", "Arango", DateTime.Parse("1980-04-16").Ticks),
         };
         
         private readonly ILogger<PlayersController> _logger;
